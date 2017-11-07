@@ -23,7 +23,7 @@ def word_substituter(string)
         word = v
       end
     end
-    word
+    short << word
   end
   return short.join(" ")
 end
