@@ -21,10 +21,9 @@ def word_substituter(string)
     dictionary.each do |k, v|
       if word == k
         word = v
-      else
-        short << word
       end
     end
+    word
   end
   return short.join(" ")
 end
