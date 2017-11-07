@@ -20,5 +20,5 @@ def word_substituter(string)
   long_tweet.each do |word|
     dictionary.keys.include?(word) ? short << dictionary[word] : short << word
   end
-  return a.join(" ")
+  return short.join(" ")
 end
