@@ -15,12 +15,13 @@ def dictionary
 end
 
 def word_substituter(string)
-  a = string.split(" ")
-  a.collect do |word|
+  long_string = string.split(" ")
+  short = []
+  string.split(" ").each do |word|
     if dictionary.keys.include?(word)
-      a[word] = dictionary[word]
+      short << dictionary[word]
     else
-      a[word]
+      short << word
     end
   end
   return a.join(" ")
