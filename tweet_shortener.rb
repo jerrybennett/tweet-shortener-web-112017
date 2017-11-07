@@ -18,10 +18,12 @@ def word_substituter(string)
   long_tweet = string.split(" ")
   short = []
   long_tweet.each do |word|
-    if word != dictionary.keys
-      short << word
-    else
-      short << dictionary.keys[word]
+    dictionary.each do |k, v|
+      if word == k
+        short << v
+      else
+        short << word
+      end
     end
   end
   return short.join(" ")
