@@ -18,8 +18,8 @@ def word_substituter(string)
   long_tweet = string.split(" ")
   long_tweet.collect do |word|
     dictionary.each do |k, v|
-      if word == k
-        word = v
+      if word == dictionary[k]
+        word = dictionary[v]
       end
     end
   end
