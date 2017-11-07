@@ -16,7 +16,7 @@ end
 
 def word_substituter(string)
   long_tweet = string.split(" ")
-  long_tweet.collect do |word|
+  long_tweet.map do |word|
     dictionary.each do |k, v|
       if word == dictionary[k]
         word = dictionary[v]
