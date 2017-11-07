@@ -21,6 +21,8 @@ def word_substituter(string)
     dictionary.each do |k, v|
       if word == k
         short << v
+      elsif word != k
+        short << word
       end
     end
   end
