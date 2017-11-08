@@ -25,4 +25,4 @@ def word_substituter(string)
   return short_tweet.join(" ")
 end
 
-def 
+def bulk_tweet_shortener()
