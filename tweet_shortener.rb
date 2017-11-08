@@ -16,7 +16,7 @@ def word_substituter(string)
   short = []
   long_tweet.each do |word|
     dictionary.each do |k, v|
-      if word[k] == k
+      if word == dictionaryk
         short << v
       else
         short << word
