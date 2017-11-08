@@ -16,11 +16,11 @@ end
 
 def word_substituter(string)
   short_tweet = string.split(" ").collect do |word|
-    if dictionary.keys.include?(word)
-      word = dictionary[word]
-    else
-      word
-    end
-  end
+    if dictionary.keys.include?(word.downcase)
+			word = dictionary[word.downcase]
+		else
+			word
+		end
+	end
   puts short_tweet.join(" ")
 end
