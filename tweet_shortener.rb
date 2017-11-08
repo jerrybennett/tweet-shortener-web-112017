@@ -12,16 +12,12 @@ def word_substituter(string)
         "at": "@",
         "and": "&"
       }
-  long_tweet = string.split(" ")
-  short = []
-  long_tweet.each do |word|
-    dictionary.each do |k, v|
-      if word == dictionaryk
-        short << v
-      else
-        short << word
-      end
+  tweet = string.split(" ")
+  tweet.map do |word|
+    if dictionary.key.includes?(word)
+      word = dictionary[word]
     end
+    word
   end
-  return short.join(" ")
+  return tweet.join(" ")
 end
