@@ -1,5 +1,5 @@
 # Write your code here.
-def word_substituter(string)
+def dictionary
   dictionary = {
         "hello": "hi",
         "to": "2",
@@ -12,6 +12,10 @@ def word_substituter(string)
         "at": "@",
         "and": "&"
       }
+end
+
+def word_substituter(string)
+
   short = []
   tweet = string.split(" ")
   tweet.each do |word|
