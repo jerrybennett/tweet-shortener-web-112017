@@ -22,5 +22,5 @@ def word_substituter(string)
 			word
 		end
 	end
-  puts short_tweet.join(" ")
+  return short_tweet.join(" ")
 end
