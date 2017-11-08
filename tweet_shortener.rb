@@ -19,7 +19,7 @@ def word_substituter(string)
     if dictionary.keys.include?(word)
 			word = dictionary[word]
 		else
-			word
+			word = word
 		end
 	end
   short_tweet.join(" ")
