@@ -15,14 +15,11 @@ def dictionary
 end
 
 def word_substituter(string)
-
   short = []
   tweet = string.split(" ")
   tweet.each do |word|
-    if dictionary.keys.include?(word.downcase)
-      short << dictionary[word.downcase]
-    else
-      short << word
+    if dictionary.keys.include?(word)
+      short <<
     end
   end
   return short.join(" ")
