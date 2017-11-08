@@ -24,3 +24,5 @@ def word_substituter(string)
 	end
   return short_tweet.join(" ")
 end
+
+def 
