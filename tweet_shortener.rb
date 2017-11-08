@@ -19,7 +19,7 @@ def word_substituter(tweet)
     if dictionary.keys.include?(word.downcase)
 			word = dictionary[word.downcase]
 		else
-			word
+			word = word
 		end
 	end
   return short_tweet.join(" ")
