@@ -25,5 +25,5 @@ def word_substituter(string)
     end
     short << word
   end
-  return short.join(" ")
+  puts short.join(" ")
 end
