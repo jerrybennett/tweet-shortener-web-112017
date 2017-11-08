@@ -15,6 +15,7 @@ def dictionary
 end
 
 def word_substituter(string)
+  dictionary
   long_tweet = string.split(" ")
   short = []
   long_tweet.collect do |word|
