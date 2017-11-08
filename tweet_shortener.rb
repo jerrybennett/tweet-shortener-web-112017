@@ -21,5 +21,5 @@ def word_substituter(string)
       word = dictionary[word]
     end
   end
-  return string.join(" ")
+  return tweet.join(" ")
 end
