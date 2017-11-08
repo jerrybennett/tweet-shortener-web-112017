@@ -15,13 +15,12 @@ def dictionary
 end
 
 def word_substituter(string)
-  tweet = string.split(" ")
-  tweet.map do |word|
+  short_tweet = string.split(" ").map do |word|
     if dictionary.keys.include?(word)
       word = dictionary[word]
     else
       word
     end
   end
-  return tweet.join(" ")
+  return short_tweet.join(" ")
 end
